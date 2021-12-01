@@ -1,0 +1,7 @@
+{
+  "name": "Task4Home",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
