@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'register',
+    loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'welcome',
+    loadChildren: () => import('./pages/welcome/welcome.module').then( m => m.WelcomePageModule)
+  },
+  {
+    path: 'users',
+    loadChildren: () => import('./pages/users/users.module').then( m => m.UsersPageModule)
+  },
+  {
+    path: 'tasks',
+    loadChildren: () => import('./pages/tasks/tasks.module').then( m => m.TasksPageModule)
+  },
+  {
+    path: 'prizes',
+    loadChildren: () => import('./pages/prizes/prizes.module').then( m => m.PrizesPageModule)
+  },
 ];
 
 @NgModule({

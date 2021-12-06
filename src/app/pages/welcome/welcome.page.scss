@@ -1,0 +1,44 @@
+@font-face {
+  font-family: Bai;
+  src: url("../../../assets/fonts/BaiJamjuree-Regular.ttf"),
+    url("../../../assets/fonts/BaiJamjuree-Regular.ttf");
+}
+
+@font-face {
+  font-family: Montse;
+  src: url("../../../assets/fonts/Montserrat-Regular.ttf"),
+    url("../../../assets/fonts/Montserrat-Bold.ttf");
+}
+
+ion-card {
+  background-color: white;
+  top: 100px;
+  margin: 20px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+ion-icon {
+  background: rgb(9, 0, 155);
+  background: linear-gradient(
+    198deg,
+    rgba(9, 0, 155, 1) 0%,
+    rgba(0, 255, 255, 1) 100%
+  );
+  color: black;
+  // margin-left: -15px;
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+ion-card-title {
+  display: inline-block;
+  font-family: Bai;
+  margin: 12px;
+  color: black;
+  font-weight: bold;
+  font-size: 2.5em;
+  vertical-align: middle;
+}

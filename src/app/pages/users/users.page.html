@@ -1,0 +1,34 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>Users</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-list>
+    <ion-item color="light">
+      <ion-avatar slot="start">
+        <img src="../../../assets/img/43.jpg">
+      </ion-avatar>
+      <ion-label>
+        <h2>Jairo</h2>
+        <h3>LimpioLocura</h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="user" (click)="goToUser()">
+      <ion-icon id="pressIcon" name="person" color="dark"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="fav"(click)="goToFav()">
+      <ion-icon name="reader-outline" color="dark"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button tab="exit"(click)="goToRegister()">
+      <ion-icon name="gift-outline" color="dark"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
