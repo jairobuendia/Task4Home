@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-prizes',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrizesPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  goLoginPage(){
+    this.router.navigate(['/home']);
+  }
+
+  goToUser(){
+    this.router.navigate(['/users']);
+  }
+
+
+  goToTasks(){
+    this.router.navigate(['/tasks']);
   }
 
 }

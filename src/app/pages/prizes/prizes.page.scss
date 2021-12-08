@@ -1,0 +1,24 @@
+*{
+    font-family: Montse;
+}
+
+ion-item {
+    margin: 20px;
+    border-radius: 10px;
+  }
+  
+  ion-tab-bar {
+    height: 80px;
+  }
+  
+  #pressIcon {
+    background: rgb(9, 0, 155);
+    background: linear-gradient(
+      198deg,
+      rgba(9, 0, 155, 1) 0%,
+      rgba(0, 255, 255, 1) 100%
+    );
+    padding: 8px;
+    border-radius: 20px;
+  }
+  

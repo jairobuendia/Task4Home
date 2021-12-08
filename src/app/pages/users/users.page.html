@@ -1,34 +1,37 @@
 <ion-header translucent>
   <ion-toolbar>
+    <ion-icon slot="start" style="margin-left: 10px;" (click)="goLoginPage()" name="arrow-back"></ion-icon>
     <ion-title>Users</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen>
-  <ion-list>
-    <ion-item color="light">
-      <ion-avatar slot="start">
-        <img src="../../../assets/img/43.jpg">
+
+<ion-content>
+    <ion-item *ngFor="let u of usersService.getUsers()" color="light">
+      <ion-avatar slot="start" >
+        <img *ngIf="u.image" [src]="u.image">
+        <img *ngIf="!u.image" src="../../assets/img/default.png">
       </ion-avatar>
       <ion-label>
-        <h2>Jairo</h2>
-        <h3>LimpioLocura</h3>
+        <h2>{{u.name}}</h2>
+        <h3>» {{u.username}}</h3>
       </ion-label>
+      <ion-icon (click)="masInfo(u)" name="ellipsis-vertical"></ion-icon>
     </ion-item>
-  </ion-list>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <!-- BOTON DE USUARIO -->
+      <ion-tab-button tab="user">
+        <ion-icon id="pressIcon" name="person" color="dark"></ion-icon>
+      </ion-tab-button>
+      <!-- BOTON DE TAREAS -->
+      <ion-tab-button tab="fav" (click)="goTaskPage()">
+        <ion-icon name="reader-outline" color="dark"></ion-icon>
+      </ion-tab-button>
+      <!-- BOTON DE PREMIOS -->
+      <ion-tab-button tab="exit" (click)="goPrizesPage()">
+        <ion-icon name="gift-outline" color="dark"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
-<ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="user" (click)="goToUser()">
-      <ion-icon id="pressIcon" name="person" color="dark"></ion-icon>
-    </ion-tab-button>
-
-    <ion-tab-button tab="fav"(click)="goToFav()">
-      <ion-icon name="reader-outline" color="dark"></ion-icon>
-    </ion-tab-button>
-
-    <ion-tab-button tab="exit"(click)="goToRegister()">
-      <ion-icon name="gift-outline" color="dark"></ion-icon>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>

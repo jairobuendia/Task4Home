@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Bai;
+    src: url("../../../assets/fonts/BaiJamjuree-Regular.ttf"),
+      url("../../../assets/fonts/BaiJamjuree-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: Montse;
+    src: url("../../../assets/fonts/Montserrat-Regular.ttf"),
+      url("../../../assets/fonts/Montserrat-Bold.ttf");
+  }
+
+*{
+    font-family: Montse;
+}
+
+ion-item {
+  margin: 20px;
+  border-radius: 10px;
+}
+
+ion-tab-bar {
+  height: 80px;
+}
+
+#pressIcon {
+  background: rgb(9, 0, 155);
+  background: linear-gradient(
+    198deg,
+    rgba(9, 0, 155, 1) 0%,
+    rgba(0, 255, 255, 1) 100%
+  );
+  padding: 8px;
+  border-radius: 20px;
+}
+
+
+h3{
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    color:rgb(44, 176, 228);
+    font-weight: bold;
+}
