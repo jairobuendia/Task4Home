@@ -1,17 +1,17 @@
 <ion-content [fullscreen]="true">
   <h1>Task4Home</h1>
   <div id="contenedor">
-    <ion-input inputmode="text" placeholder=" Name"></ion-input>
+    <ion-input inputmode="text" [(ngModel)]="name" placeholder=" Name"></ion-input>
     <br>
-    <ion-input inputmode="text" placeholder=" Username"></ion-input>
+    <ion-input inputmode="text" [(ngModel)]="username" placeholder=" Username"></ion-input>
     <br>
-    <ion-input inputmode="email" placeholder=" Email address"></ion-input>
+    <ion-input inputmode="email" [(ngModel)]="email" placeholder=" Email address"></ion-input>
     <br>
-    <ion-input inputmode="password" placeholder=" Password"></ion-input>
+    <ion-input inputmode="password" [(ngModel)]="password" placeholder=" Password"></ion-input>
     <br>
     <ion-input inputmode="password" placeholder=" Repeat password"></ion-input>
     <ion-router-link href="/home">Already have account? Sign in</ion-router-link>
-    <ion-button id="btnlogin" (click)="goLoginPage()" expand="block">Sign up</ion-button>
+    <ion-button id="btnlogin" (click)="completeRegister(user)" expand="block">Sign up</ion-button>
 
   </div>
 </ion-content>

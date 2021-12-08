@@ -1,24 +1,70 @@
-*{
-    font-family: Montse;
+@font-face {
+  font-family: Bai;
+  src: url("../../../assets/fonts/BaiJamjuree-Regular.ttf"),
+    url("../../../assets/fonts/BaiJamjuree-Regular.ttf");
+}
+
+@font-face {
+  font-family: Montse;
+  src: url("../../../assets/fonts/Montserrat-Regular.ttf"),
+    url("../../../assets/fonts/Montserrat-Bold.ttf");
+}
+
+* {
+  font-family: Montse;
+}
+
+
+.container {
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  width: 250px;
+  height: 100px;
+  margin: auto;
+  display: block;
+}
+
+h4{
+    font-size: 15px;
+}
+
+p{
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
 }
 
 ion-item {
-    margin: 20px;
-    border-radius: 10px;
-  }
-  
-  ion-tab-bar {
-    height: 80px;
-  }
-  
-  #pressIcon {
-    background: rgb(9, 0, 155);
-    background: linear-gradient(
-      198deg,
-      rgba(9, 0, 155, 1) 0%,
-      rgba(0, 255, 255, 1) 100%
-    );
-    padding: 8px;
-    border-radius: 20px;
-  }
-  
+  margin: 20px;
+  border-radius: 10px;
+}
+
+ion-tab-bar {
+  height: 80px;
+}
+
+ion-tabs{
+    z-index: 1;
+}
+
+#pressIcon {
+  background: rgb(9, 0, 155);
+  background: linear-gradient(
+    198deg,
+    rgba(9, 0, 155, 1) 0%,
+    rgba(0, 255, 255, 1) 100%
+  );
+  padding: 8px;
+  border-radius: 20px;
+}

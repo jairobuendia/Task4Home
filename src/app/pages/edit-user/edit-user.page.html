@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Create User</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="floating">Name</ion-label>
+    <ion-input [(ngModel)]="user.name" clearInput type="text">
+    </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Username</ion-label>
+    <ion-input  [(ngModel)]="user.username" clearInput type="text">
+    </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input  [(ngModel)]="user.email" clearInput type="text">
+    </ion-input>
+  </ion-item>
+  <br>
+  <br>
+  <ion-button (click)="goUsers()"  shape="round" color="danger">
+    Cancel
+  </ion-button>
+  <ion-button (click)="saveUser()" style="float: right;" shape="round" color="success">
+    Save
+  </ion-button>
+</ion-content>

@@ -7,17 +7,16 @@
 
 
 <ion-content>
-    <!-- <ion-item *ngFor="let u of usersService.getUsers()" color="light">
-      <ion-avatar slot="start" >
-        <img *ngIf="u.image" [src]="u.image">
-        <img *ngIf="!u.image" src="../../assets/img/default.png">
-      </ion-avatar>
-      <ion-label>
-        <h2>{{u.name}}</h2>
-        <h3>» {{u.username}}</h3>
-      </ion-label>
-      <ion-icon (click)="masInfo(u)" name="ellipsis-vertical"></ion-icon>
-    </ion-item> -->
+  <ion-item *ngFor="let p of prizesService.getPrizes()">
+    <ion-card (click)="goToUser()" class="container">
+      <img src="../../assets/prizes-img/default.jpg">
+      <div class="centered">
+        <h4>{{p.name}}</h4>
+        <p>{{p.points}} p</p>
+      </div>
+    </ion-card>
+  </ion-item>
+
   <ion-tabs>
     <ion-tab-bar slot="bottom">
       <!-- BOTON DE USUARIO -->

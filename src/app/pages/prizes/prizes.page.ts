@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { PrizesService } from 'src/app/services/prizes.service';
 
 @Component({
   selector: 'app-prizes',
@@ -8,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class PrizesPage implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public prizesService: PrizesService) { }
 
   ngOnInit() {
   }

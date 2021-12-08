@@ -28,6 +28,12 @@ export class UsersPage implements OnInit {
     this.router.navigate(['/prizes']);
   }
 
+  goAddUserPage(){
+    this.router.navigate(['/edit-user'])
+    
+  }
+
+
   async masInfo(u: User) {
     console.log("TESTING")
     const alert = await this.alertController.create({
