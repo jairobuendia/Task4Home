@@ -20,9 +20,11 @@ _Estructura breve del proyecto completo_
 _Capturas de pantalla independientes para cada página de la aplicación_
 
 _--Login--_
+
 ![image](https://user-images.githubusercontent.com/55530657/145399024-4727977d-990a-4a51-9c4e-a32abf08c8df.png)
 
 _--Register--_
+
 ![image](https://user-images.githubusercontent.com/55530657/145399552-27a2654f-2126-4615-aab9-92ca9c45765a.png)
 
 _--Página principal--_
