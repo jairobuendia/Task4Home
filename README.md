@@ -1,3 +1,3 @@
 # Task4Home
 
-_Una maqueta desarrollada en Ionic de una aplicación realizada para gestionar tareas en un grupo de personas_
+_Una maqueta desarrollada en Ionic de una aplicaciónpara gestionar tareas domésticas en un grupo de usuarios_
