@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { User } from 'src/app/model/user';
 import { UsersService } from 'src/app/services/users.service';
 import { ToastController } from '@ionic/angular';
@@ -13,7 +13,7 @@ export class EditUserPage implements OnInit {
 
   user: User = {name: '', username: '', email: ''};
 
-  constructor(private usersService: UsersService,private router: Router,private activatedRoute: ActivatedRoute, private toastController: ToastController) { }
+  constructor(private usersService: UsersService,private router: Router, private toastController: ToastController) { }
 
   ngOnInit(
     
@@ -21,13 +21,13 @@ export class EditUserPage implements OnInit {
   }
   saveUser() {
     this.usersService.saveUser(this.user);
-    this.router.navigateByUrl('/users');
+    this.router.navigate(['/users']);
     this.user = {name: '', username: '', email: ''};
     this.showToast('Saving user...');
   }
 
   goUsers() {
-    this.router.navigateByUrl('/users');
+    this.router.navigate(['/users']);
     this.user = {name: '', username: '', email: ''};
     this.showToast('Canceling...');
   }

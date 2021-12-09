@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Edit Task</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="floating">Name</ion-label>
+    <ion-input [(ngModel)]="task.name" clearInput type="text">
+    </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Points</ion-label>
+    <ion-input [(ngModel)]="task.points" clearInput type="text">
+    </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Finish Date</ion-label>
+    <ion-datetime style="font-size: 15px;" placeholder="Date" name="fecha" type="date" display-format="DD MMM YYYY" min="2021" max="2030"
+      cancelText="Cancel" [(ngModel)]="task.finishDate" required="true">
+    </ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Stars</ion-label>
+    <ion-select style="font-size: 12px;" placeholder="{{task.stars}}" [(ngModel)]="task.stars">
+      <ion-select-option value="1">★</ion-select-option>
+      <ion-select-option value="2">★★</ion-select-option>
+      <ion-select-option value="3">★★★</ion-select-option>
+      <ion-select-option value="4">★★★★</ion-select-option>
+      <ion-select-option value="5">★★★★★</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label>Selected</ion-label>
+    <ion-button (click)="changeSelected(task)" expand="block" fill="clear" shape="round">
+      <ion-icon style="color: greenyellow;" *ngIf="task.selected==false" name="checkmark"></ion-icon>
+      <ion-icon style="color: red;" *ngIf="task.selected==true" name="close"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <br>
+  <ion-button *ngIf="task.id" (click)="deleteTask(task)" expand="block" color="warning" shape="round">
+    <ion-icon name="trash"></ion-icon>
+  </ion-button>
+  <br>
+  <ion-button (click)="goTasks()" shape="round" color="danger">
+    Cancel
+  </ion-button>
+  <ion-button (click)="saveTask()" style="float: right;" shape="round" color="success">
+    Save
+  </ion-button>
+</ion-content>

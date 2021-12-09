@@ -4,4 +4,5 @@ export class Task {
     stars: number;
     points: number;
     selected?: boolean;
+    finishDate?: string; 
 }

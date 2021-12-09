@@ -2,12 +2,12 @@
   <ion-toolbar>
     <ion-icon slot="start" style="margin-left: 10px;" (click)="goLoginPage()" name="arrow-back"></ion-icon>
     <ion-title>Tasks</ion-title>
-    <ion-icon slot="end" style="margin-right: 10px;" (click)="goLoginPage()" name="add"></ion-icon>
+    <ion-icon slot="end" style="margin-right: 10px;" (click)="goEditTaskPage()" name="add"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-item *ngFor="let t of tasksService.getTasks()" color="light">
+  <ion-item *ngFor="let t of tasksService.getTasks()" (click)="goEditTaskPage(t.id)" color="light">
     <ion-label>
       <h2>{{t.name}}</h2>
       <ion-icon *ngIf="t.stars >= 1" name="star"></ion-icon>
@@ -17,8 +17,8 @@
       <ion-icon *ngIf="t.stars >= 5" name="star"></ion-icon>
       <h3> + {{t.points}} p</h3>
     </ion-label>
-    <ion-icon style="color: greenyellow;" *ngIf="t.selected==false" (click)="changeSelected(t)" name="checkmark"></ion-icon>
-    <ion-icon style="color: red;" *ngIf="t.selected==true" (click)="changeSelected(t)" name="close"></ion-icon>
+    <ion-icon style="color: greenyellow;" *ngIf="t.selected==false"  name="checkmark"></ion-icon>
+    <ion-icon style="color: red;" *ngIf="t.selected==true" name="close"></ion-icon>
   </ion-item>
   <ion-tabs>
     <ion-tab-bar slot="bottom">

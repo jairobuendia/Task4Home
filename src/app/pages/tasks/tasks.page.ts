@@ -10,18 +10,11 @@ import { TasksService } from 'src/app/services/tasks.service';
 })
 export class TasksPage implements OnInit {
 
-  constructor(private router: Router, public tasksService: TasksService) { }
+  constructor(private router: Router, public tasksService: TasksService,) { }
 
   ngOnInit() {
   }
 
-  changeSelected(t: Task){
-    if(t.selected == false){
-      t.selected = true;
-    } else {
-      t.selected = false;
-    }
-  }
   goToUser(){
     this.router.navigate(['/users']);
   }
@@ -33,4 +26,9 @@ export class TasksPage implements OnInit {
   goToPrizes(){
     this.router.navigate(['/prizes']);
   }
+
+  goEditTaskPage(id?: number) {
+    this.router.navigateByUrl(`/edit-task${id != undefined ? '/' + id : ''}`);
+  }
+
 }
