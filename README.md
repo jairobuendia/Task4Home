@@ -1,5 +1,7 @@
 # Task4Home
 ![image](https://user-images.githubusercontent.com/55530657/145400359-8a65b6f5-1835-4004-8088-5aed9587b39a.png)
+
+
 _Una maqueta desarrollada en Ionic de una aplicaciónpara gestionar tareas domésticas en un grupo de usuarios, el objetivo final de la aplicación es que las personas hagan tareas
 para obtener premios y así se hagan las tareas de forma constante y ordenada_
 HomePage: https://github.com/jairobuendia/Task4Home/tree/main/src/app/home
