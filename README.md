@@ -3,7 +3,8 @@
 
 
 _Una maqueta desarrollada en Ionic de una aplicación para gestionar tareas domésticas en un grupo de usuarios, el objetivo final de la aplicación es que las personas hagan tareas
-para obtener premios y así se hagan las tareas de forma constante y ordenada_
+para obtener premios y así se hagan las tareas de forma constante y ordenada._
+
 HomePage: https://github.com/jairobuendia/Task4Home/tree/main/src/app/home
 
 ### Estructura 📋
