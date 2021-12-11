@@ -1,9 +1,9 @@
 <ion-content [fullscreen]="true">
   <h1>Task4Home</h1>
   <div id="contenedor">
-    <ion-input inputmode="email" placeholder=" Email"></ion-input>
+    <ion-input inputmode="email" [(ngModel)]="email" placeholder=" Email"></ion-input>
     <br>
-    <ion-input inputmode="password" placeholder=" Password"></ion-input>
+    <ion-input inputmode="password" type="password" [(ngModel)]="password" placeholder=" Password"></ion-input>
     <ion-router-link >Forgot your password?</ion-router-link>
     <div id="checkbox">
       <ion-checkbox unchecked slot="start"></ion-checkbox>

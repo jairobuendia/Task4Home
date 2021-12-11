@@ -10,10 +10,9 @@ export class PrizesService {
 
   constructor() { 
     this.prizes = [
-      {"id":1,"name":"Entrada Warner","points":5000,"image":"../../assets/prizes-img/warner.jpg"},
+      {"id":1,"name":"Entrada Warner","points":5000},
       {"id":2,"name":"20€ Paysafecard","points":2500},
-      {"id":3,"name":"1 Juego a elegir","points":3000,"image":"../../assets/prizes-img/juegos-ps5.jpg"},
-      {"id":4,"name":"50€ en Primark","points":3500},
+      {"id":3,"name":"1 Juego a elegir","points":3000},
       ];
   }
 

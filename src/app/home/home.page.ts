@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,14 +8,37 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  constructor(
+    private router: Router,
+    private toastController: ToastController
+  ) {}
 
-  constructor(private router: Router) {}
+  email: string;
+  password: string;
 
   goRegisterPage() {
     this.router.navigate(['/register']);
   }
 
   goWelcomePage() {
-    this.router.navigate(['/welcome']);
+    if (this.email == "test@gmail.com" && this.password == "123456") {
+      this.router.navigate(['/welcome']);
+    } else {
+      this.showToast("Email o contraseña son incorrectos, inténtalo de nuevo")
+      this.email = "";
+      this.password = "";
+    }
+  }
+
+  /* Mostrar el toast */
+  async showToast(message: string) {
+    const toast = await this.toastController.create({
+      message,
+      duration: 800,
+      position: 'bottom',
+      animated: true,
+      color: 'light',
+    });
+    toast.present();
   }
 }
