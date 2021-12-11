@@ -3,11 +3,11 @@
 
 
 _Una maqueta desarrollada en Ionic de una aplicación para gestionar tareas domésticas en un grupo de usuarios, el objetivo final de la aplicación es que las personas hagan tareas
-para obtener premios y así se hagan las tareas de forma constante y ordenada.
+para obtener premios y así se hagan las tareas de forma constante y ordenada._
 
 Para iniciar sesión en la aplicación tendras que usar las siguientes credenciales
 Email: test@gmail.com
-Contraseña: 123456_
+Contraseña: 123456
 
 HomePage: https://github.com/jairobuendia/Task4Home/tree/main/src/app/home
 
