@@ -6,6 +6,7 @@ _Una maqueta desarrollada en Ionic de una aplicación para gestionar tareas dom�
 para obtener premios y así se hagan las tareas de forma constante y ordenada._
 
 Para iniciar sesión en la aplicación tendras que usar las siguientes credenciales
+
 Email: test@gmail.com
 Contraseña: 123456
 
