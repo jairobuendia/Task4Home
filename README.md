@@ -35,7 +35,7 @@ _--Usuarios--_
 ![image](https://user-images.githubusercontent.com/55530657/145399764-f3cbeb16-34ec-4f06-9057-5a26719409c3.png)
 
 En está pantalla se muestra los usuarios que pertenecen al grupo en el que estás.<br>
-El administrador es el único que podra añadir usuarios al grupo.
+El administrador es el único que podra añadir o eliminar usuarios al grupo.
 
 _--Tareas--_
 
