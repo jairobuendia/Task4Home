@@ -1,32 +1,18 @@
-# Task4Home
-![image](https://user-images.githubusercontent.com/55530657/145400359-8a65b6f5-1835-4004-8088-5aed9587b39a.png)
+<h3 align="center">Task4Home</h3>
 
 
-_Una maqueta desarrollada en Ionic de una aplicación para gestionar tareas domésticas en un grupo de usuarios, el objetivo final de la aplicación es que las personas hagan tareas
-para obtener premios y así se hagan las tareas de forma constante y ordenada._
+### ¿Qué es Task4Home? 📋
 
-Para iniciar sesión en la aplicación tendras que usar las siguientes credenciales
-```
-Email: test@gmail.com
-Contraseña: 123456
-```
+_Una aplicación que consiste en gestionar tareas domésticas y al realizarlas consigues unos puntos que son canjeables por premios, todo esto en un grupo de usuarios que conviven en la misma casa o trabajo, el objetivo final de la aplicación es que se realizen de forma ordenada las tareas que son obligatorias pero a nadie le gusta hacer._
 
-HomePage: https://github.com/jairobuendia/Task4Home/tree/main/src/app/home
 
 ### Estructura 📋
 
-_Estructura breve del proyecto completo_
+_Aplicación desarrollada en Android_
 
-```
-- 8 páginas
-- 3 clases
-- 3 servicios
-- Base de datos local
-```
+![image](https://user-images.githubusercontent.com/55530657/161503483-7ed9a8f7-ed9f-4b15-b108-1555d296f822.png)
 
-### Capturas de pantalla🔧
-
-_Capturas de pantalla independientes para cada página de la aplicación_
+### Funcionamiento🔧
 
 _--Login--_
 
