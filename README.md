@@ -1,52 +1,63 @@
-<h3 align="center">Task4Home</h3>
+# Task4Home
+![image](https://user-images.githubusercontent.com/55530657/145400359-8a65b6f5-1835-4004-8088-5aed9587b39a.png)
 
 
-### ¿Qué es Task4Home? 📋
+_Una maqueta desarrollada en Ionic de una aplicación para gestionar tareas domésticas en un grupo de usuarios, el objetivo final de la aplicación es que las personas hagan tareas
+para obtener premios y así se hagan las tareas de forma constante y ordenada._
 
-_Una aplicación que consiste en gestionar tareas domésticas y al realizarlas consigues unos puntos que son canjeables por premios, todo esto en un grupo de usuarios que conviven en la misma casa o trabajo, el objetivo final de la aplicación es que se realizen de forma ordenada las tareas que son obligatorias pero a nadie le gusta hacer._
+Para iniciar sesión en la aplicación tendras que usar las siguientes credenciales
+```
+Email: test@gmail.com
+Contraseña: 123456
+```
 
-<p align="center">##Esto es una primera versión de la aplicación, puede someterse a cambios considerables de diseño y funcionabilidad##</p>
-
+HomePage: https://github.com/jairobuendia/Task4Home/tree/main/src/app/home
 
 ### Estructura 📋
 
-_Aplicación desarrollada en Android_
+_Estructura breve del proyecto completo_
 
-![image](https://user-images.githubusercontent.com/55530657/161503483-7ed9a8f7-ed9f-4b15-b108-1555d296f822.png)
+```
+- 8 páginas
+- 3 clases
+- 3 servicios
+- Base de datos local
+```
 
-### Funcionamiento🔧
+### Capturas de pantalla🔧
 
-_--Login y Register--_
+_Capturas de pantalla independientes para cada página de la aplicación_
+
+_--Login--_
 
 ![image](https://user-images.githubusercontent.com/55530657/145399024-4727977d-990a-4a51-9c4e-a32abf08c8df.png)
+
+_--Register--_
+
 ![image](https://user-images.githubusercontent.com/55530657/145399552-27a2654f-2126-4615-aab9-92ca9c45765a.png)
 
-En estas pantallas podras registrarte como usuario o loguearte para entrar en la aplicación.
-
-_--Página principal--_ (Seguramente sea sustituida)
+_--Página principal--_
 
 ![image](https://user-images.githubusercontent.com/55530657/145399630-cc65c58e-ed94-4908-8583-ced42c9678f7.png)
-
-En está pantalla eliges a donde quieres dirigirte.
 
 _--Usuarios--_
 
 ![image](https://user-images.githubusercontent.com/55530657/145399681-515f7107-74a3-44c6-a716-073d0f1335b9.png)
 ![image](https://user-images.githubusercontent.com/55530657/145399764-f3cbeb16-34ec-4f06-9057-5a26719409c3.png)
 
-En está pantalla se muestra los usuarios que pertenecen al grupo en el que estás.<br>
-El administrador es el único que podra añadir o eliminar usuarios al grupo.
+_--Crear Usuarios--_
+
+![image](https://user-images.githubusercontent.com/55530657/145399798-617d5ad6-bae7-4e2f-8f27-ef67dc138be9.png)
 
 _--Tareas--_
 
 ![image](https://user-images.githubusercontent.com/55530657/145399863-d879a022-45b4-461d-ba98-75f91c5bc09c.png)
 
-En está pantalla se muestra las tareas que hay que realizar.<br>
-El administrador es el único que podra añadir, modificar o eliminar tareas.
+_--Crear/Modificar Tareas--_
+
+![image](https://user-images.githubusercontent.com/55530657/145399930-9b9ad9b6-f8a9-4d4a-bbfe-d2019b70046c.png)
+![image](https://user-images.githubusercontent.com/55530657/145399967-b0adad2f-8533-49ba-b14b-8aabff1583d9.png)
 
 _--Premios--_
 
 ![image](https://user-images.githubusercontent.com/55530657/145400030-564d4462-9737-424a-b5cd-098d17144a43.png)
-
-En está pantalla se muestra los premios disponibles para canjear.<br>
-El administrador es el único que podra añadir, modificar o eliminar premios.
